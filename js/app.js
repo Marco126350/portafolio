@@ -32,8 +32,12 @@ window.onscroll = () => {
   header.classList.toggle('sticky', window.scrollY > 100);
 
   // **********REMOVE TOGGLE ICON AND NAVBAR WHEN CLICK NAVVBAR LINK(SCROLL)*********
-  menuIcon.classList.remove('bx-x');
+ 
+  navbar.onclick = () => {
+  menuIcon.classList.remove('fa-x');
   navbar.classList.remove('acto');
+  }
+
 };
 
  // **********SCROLL REVEAL*********
