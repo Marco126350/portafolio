@@ -426,6 +426,9 @@ MEDIA QUERY
    html{
     font-size: 50%;
    }
+   .about{
+    padding-top: 0;
+   }
    .contact form .input-box input{
     width: 100%;
    }
