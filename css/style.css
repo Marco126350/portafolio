@@ -165,6 +165,8 @@ ACERCA DE
   align-items: center;
   gap: 2rem;
   background: var(--second-bg-color);
+  margin: auto auto;
+  padding-top: 0;
 }
 .about-img img{
   width: 35vw;
@@ -400,6 +402,7 @@ MEDIA QUERY
   }
   .about{
     flex-direction: column-reverse;
+    padding-top: 4rem;
   }
   .about img{
     width: 70vw;
@@ -420,6 +423,9 @@ MEDIA QUERY
    .portfolio-container{
     grid-template-columns: 1fr;
    }
+   .about{
+    padding-top: 0;
+   }
 }
 
 @media (max-width: 450px) {
@@ -437,6 +443,9 @@ MEDIA QUERY
 @media (max-width: 365px) {
    .home-img img{
     width: 90vw;
+   }
+  .about{
+    padding-top: 0;
    }
    .about-img img{
     width: 90vw;
