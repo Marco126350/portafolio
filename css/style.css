@@ -253,8 +253,12 @@ PORTAFOLIO
   overflow: hidden;
   display: flex;
 }
+.portfolio-box{
+  max-height: 13.5rem;
+}
 .portfolio-box img{
   width: 100%;
+  object-fit: cover;
 }
 .portfolio-box:hover img{
   transform: scale(1.1);
