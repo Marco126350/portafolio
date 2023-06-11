@@ -257,7 +257,7 @@ PORTAFOLIO
   display: flex;
 }
 .portfolio-box{
-  max-height: 13.5rem;
+  max-height: 20rem;
 }
 .portfolio-box img{
   width: 100%;
