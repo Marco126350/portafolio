@@ -372,6 +372,12 @@ MEDIA QUERY
    }
 }
 @media (max-width: 768px) {
+  body{
+    text-align: center;
+  }
+  .about-content h2{
+    text-align: center;
+  }
   #menu-icon{
     display: block;
   }
@@ -424,6 +430,13 @@ MEDIA QUERY
   .portfolio-container{
     grid-template-columns: repeat(2,1fr);
   }
+   .footer{
+    flex-direction: column-reverse;
+   }
+   .footer p{
+    text-align: center;
+    margin-top: 2rem;
+   }
 }
 
 @media (max-width: 617px) {
@@ -456,12 +469,5 @@ MEDIA QUERY
    }
    .about-img img{
     width: 90vw;
-   }
-   .footer{
-    flex-direction: column-reverse;
-   }
-   .footer p{
-    text-align: center;
-    margin-top: 2rem;
    }
 }
