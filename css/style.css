@@ -180,8 +180,7 @@ ACERCA DE
   font-size: 4.5rem;
 }
 .about-content h2{
-  text-align: left;
-  line-height: 1.2rem;
+  text-align: centesr;
   margin-bottom: 3rem;
 }
 .about-content h3{
@@ -197,6 +196,9 @@ ACERCA DE
 HABILIDADES 
 
 */
+.services{
+  padding-top: 3rem;
+}
 .services-container{
   display: flex;
   justify-content: center;
@@ -239,6 +241,7 @@ PORTAFOLIO
 */
 .portfolio{
   background: var(--second-bg-color);
+  padding-top: 3rem;
 }
 .portfolio h2{
   margin-bottom: 4rem;
@@ -345,7 +348,13 @@ FOOTER
 MEDIA QUERY
 
 */
-
+@media (max-width: 1200px) {
+   .heading{
+    display: block;
+    height: auto;
+    margin: 0;
+   }
+}
 @media (max-width: 991px) {
    .header{
     padding: 2rem 3%;
@@ -440,14 +449,11 @@ MEDIA QUERY
     grid-template-columns: 1fr;
    }
    .about{
-    padding-top: 0;
+    padding-top: 2rem;
    }
 }
 
 @media (max-width: 450px) {
-   .about{
-    padding-top: 0;
-   }
    .contact form .input-box input{
     width: 100%;
    }
@@ -457,9 +463,7 @@ MEDIA QUERY
    .home-img img{
     width: 90vw;
    }
-  .about{
-    padding-top: 0;
-   }
+
    .about-img img{
     width: 90vw;
    }
