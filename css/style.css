@@ -8,7 +8,7 @@
 
 /* GLOBALES */
 html{
-  font-size: 65,2%;
+  font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1400 - 300)));
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
@@ -345,11 +345,6 @@ FOOTER
 MEDIA QUERY
 
 */
-@media (max-width: 1217px) {
-   html{
-    font-size: 55%;
-   }
-}
 
 @media (max-width: 991px) {
    .header{
@@ -372,6 +367,7 @@ MEDIA QUERY
    }
 }
 @media (max-width: 768px) {
+  
   body{
     text-align: center;
   }
@@ -449,9 +445,6 @@ MEDIA QUERY
 }
 
 @media (max-width: 450px) {
-   html{
-    font-size: 50%;
-   }
    .about{
     padding-top: 0;
    }
@@ -460,7 +453,7 @@ MEDIA QUERY
    }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 380px) {
    .home-img img{
     width: 90vw;
    }
@@ -469,5 +462,9 @@ MEDIA QUERY
    }
    .about-img img{
     width: 90vw;
+   }
+   .heading span{
+    display: block;
+    padding-top: 3rem;
    }
 }
