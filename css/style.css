@@ -32,7 +32,7 @@ body{
 }
 section{
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 3rem 9% 2rem;
 }
 /*
 
@@ -40,7 +40,7 @@ section{
 
 */
 .header{
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -178,6 +178,7 @@ ACERCA DE
 .heading{
   text-align: center;
   font-size: 4.5rem;
+  padding-top: 3rem;
 }
 .about-content h2{
   text-align: centesr;
@@ -360,7 +361,7 @@ MEDIA QUERY
     padding: 2rem 3%;
    }
    section{
-    padding: 10rem 3% 2rem;
+    padding: 3rem 3% 2rem;
    }
    .services{
     padding-bottom: 7rem;
