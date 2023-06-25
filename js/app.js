@@ -1,6 +1,6 @@
 // **********TOGGLE ICONS NAVBAR*********
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.header__navbar');
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('fa-x');
@@ -27,9 +27,9 @@ window.onscroll = () => {
   });
 
   // **********STICKY NAVBAR*********
-  let header = document.querySelector('header');
+  // let header = document.querySelector('header');
   
-  header.classList.toggle('sticky', window.scrollY > 100);
+  // header.classList.toggle('sticky', window.scrollY > 100);
 
   // **********REMOVE TOGGLE ICON AND NAVBAR WHEN CLICK NAVVBAR LINK(SCROLL)*********
  
@@ -48,10 +48,10 @@ window.onscroll = () => {
    delay: 200
   });
   
-  ScrollReveal().reveal('.home-content, .heading', { origin:'top' });
-  ScrollReveal().reveal('.home-img, .portfolio-box', { origin:'bottom' });
-  ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
-  ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+  ScrollReveal().reveal('.home__hero-image-content, .heading', { origin:'top' });
+  ScrollReveal().reveal('.home-img, .portfolio__container-box', { origin:'bottom' });
+  ScrollReveal().reveal('.home__hero-image-content h1,.services__container-box',  { origin:'left' });
+  ScrollReveal().reveal('.home__hero-image-content p, .about__content', { origin: 'right' });
   
   
   // **********TYPED JS*********

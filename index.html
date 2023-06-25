@@ -24,16 +24,16 @@
     <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
   <!-- end-style -->
-  <title></title>
+  <title>Portafolio Web</title>
 </head>
 <body>
   <!-- header -->
-  <header class="header">
-    <a href="#" class="logo">&lt;MR/&gt;</a>
+  <header class="header ">
+    <a href="#" class="header__logo">&lt;MR/&gt;</a>
 
     <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-    <nav class="navbar">
+    <nav class="header__navbar">
       <a href="#home" class="active">Hola!</a>
       <a href="#about">Acerca</a>
       <a href="#ability">Habilidades</a>
@@ -43,7 +43,11 @@
 
   <!-- seccion home -->
   <section class="home" id="home">
-    <div class="home-content">
+    <article class="home__hero-image" style="--hero-image:url('/assets/img/fondo.webp'); --hero-attachment: fixed ;">
+
+      <aside class="home__hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color)">
+
+      <div class="home__hero-image-content">
       <h3>Hola, Mi nombre es</h3>
       <h1>Marco Rodriguez</h1>
       <h3> Y soy  <span class="multiple-text"></span> </h3>
@@ -54,23 +58,26 @@
         <a rel="noopener" href="https://github.com/Marco126350" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a rel="noopener" href="https://www.linkedin.com/in/marco-rodriguezr-ing/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <a href="https://github.com/Marco126350/portafolio/blob/b6f4ce3bcfa593b03bc6a435030ceca1a637c1db/Assets/pdf/titulo.pdf" rel="noopener" target="_blank" class="btn">Titulo</a>
-      <a href="https://marcorodriguescv.netlify.app" rel="noopener" target="_blank" class="btn">Curriculum Vitae</a>
-    </div>
+        <a href="https://github.com/Marco126350/portafolio/blob/b6f4ce3bcfa593b03bc6a435030ceca1a637c1db/Assets/pdf/titulo.pdf" rel="noopener" target="_blank" class="btn">Titulo</a>
+        <a href="https://marcorodriguescv.netlify.app" rel="noopener" target="_blank" class="btn">Curriculum Vitae</a>
+      </div>
 
-    <div class="home-img">
-      <img src="Assets/img/home.webp" alt="home">
-    </div>
+      <div class="home-img">
+        <img src="Assets/img/home.webp" alt="home">
+      </div>
+
+      </aside>
+    </article>
   </section>
 
 
   <!-- seccion acerca  -->
-  <section class="about" id="about">
+  <section class="about section" id="about">
     <!-- <div class="about-img">
       <img src="Assets/img/perfil.webp" alt="perfil">
     </div> -->
 
-    <div class="about-content">
+    <div class="about__content">
       <h2 class="heading">Acerca De <span>Mi</span> </h2>
       <h3>Frontend Developer!</h3>
       <p>Mi interés en el desarrollo Front-End se basa en mi deseo de crear interfaces intuitivas y agradables para los usuarios. Busco constantemente mejorar la experiencia de usuario, desde el diseño y la navegación hasta la interacción y la respuesta del sitio web.</p>
@@ -79,54 +86,54 @@
   </section>
 
   <!-- seccion habilidades -->
-   <section class="services" id="ability">
+   <section class="services section" id="ability">
     <h2 class="heading">Mis <span>Habilidades</span> </h2>
 
-    <div class="services-container">
-      <!-- <div class="services-box">
+    <div class="services__container">
+      <!-- <div class="services__container-box">
         <i class="fa-brands fa-react"></i>
         <h3>React</h3>
         <p>React es una increíble biblioteca de JavaScript que me ha permitido construir interfaces de usuario interactivas y reactivas de manera eficiente.</p>
       </div> -->
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-sharp fa-solid fa-earth-americas"></i>
         <h3>Certificado de ingles</h3>
         <p>Recientemente, tuve la oportunidad de participar en un curso de inglés y debo decir que ha sido una experiencia increíble. Durante el curso, pude sumergirme en el idioma y adquirir nuevas habilidades lingüísticas de una manera emocionante y efectiva. </p>
         <a rel="noopener" target="_blank" href="https://github.com/Marco126350/portafolio/blob/b6f4ce3bcfa593b03bc6a435030ceca1a637c1db/Assets/pdf/certificado-ingles.pdf" class="btn">Ver certificado</a>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-html5"></i>
         <h3>Html</h3>
         <p>Tengo experiencia sólida en el desarrollo de HTML, lo que me permite construir estructuras sólidas y semánticas para sitios web. Utilizo las etiquetas y elementos adecuados para garantizar una jerarquía clara y un código limpio. Mi conocimiento en HTML me permite crear páginas web accesibles y optimizadas, brindando una base sólida para el desarrollo de proyectos en línea.</p>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-css3-alt"></i>
         <h3>Css</h3>
         <p>Poseo habilidades destacadas en el desarrollo de CSS, lo que me permite crear estilos y diseños atractivos para sitios web. Utilizo selectores y propiedades CSS de manera efectiva para lograr la apariencia deseada, manteniendo un código limpio y organizado. Mi enfoque en la estética y la coherencia visual me permite mejorar la experiencia del usuario y ofrecer diseños modernos y atractivos.</p>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-square-js"></i>
         <h3>JavaScript</h3>
         <p>Tengo un sólido dominio en el desarrollo de JavaScript, lo que me permite crear interacciones dinámicas y funcionales en los sitios web. Utilizo el poder de JavaScript para agregar funcionalidades, validar formularios y realizar manipulaciones en tiempo real. Mi conocimiento en JavaScript me permite crear experiencias interactivas y mejorar la usabilidad de los sitios web, brindando una experiencia fluida y atractiva para los usuarios.</p>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-bootstrap"></i>
         <h3>Bootstrap</h3>
         <p>Tengo un sólido dominio en el desarrollo de JavaScript, lo que me permite crear interacciones dinámicas y funcionales en los sitios web. Utilizo el poder de JavaScript para agregar funcionalidades, validar formularios y realizar manipulaciones en tiempo real. Mi conocimiento en JavaScript me permite crear experiencias interactivas y mejorar la usabilidad de los sitios web, brindando una experiencia fluida y atractiva para los usuarios.</p>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-css3-alt"></i>
         <h3>Bem</h3>
         <p>Utilizo esta metodología para organizar y mantener un flujo de trabajo eficiente. Con BEM, puedo dividir mi código en bloques, elementos y modificadores, lo que me permite escribir CSS modular y reutilizable. Esta metodología me ayuda a mantener un código limpio, escalable y fácil de mantener, proporcionando una estructura clara y coherente para mis proyectos de desarrollo front-end.</p>
       </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-solid fa-network-wired"></i>
         <h3>Curso Dev Tech</h3>
         <p>
@@ -134,7 +141,7 @@
         </p>
         </div>
 
-      <div class="services-box">
+      <div class="services__container-box">
         <i class="fa-brands fa-git"></i>
         <i class="fa-brands fa-github"></i>
         <h3>Git y Github</h3>
@@ -146,11 +153,11 @@
   </section>
 
   <!-- secccion portafolio -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio section" id="portfolio">
     <h2 class="heading">Ultimos <span>Proyectos</span> </h2>
-    <div class="portfolio-container">
+    <div class="portfolio__container">
 
-      <div class="portfolio-box">
+      <div class="portfolio__container-box">
         <img src="Assets/img/restaurante.webp" alt="restaurante">
         <div class="portfolio-layer">
           <h4>Restaurante</h4>
@@ -159,7 +166,7 @@
         </div>
       </div>
 
-      <div class="portfolio-box">
+      <div class="portfolio__container-box">
         <img src="Assets/img/landing-page.webp" alt="landing-page">
         <div class="portfolio-layer">
           <h4>Landing-page</h4>
@@ -168,7 +175,7 @@
         </div>
       </div>
 
-      <div class="portfolio-box">
+      <div class="portfolio__container-box">
         <img src="Assets/img/tienda.webp" alt="tienda">
         <div class="portfolio-layer">
           <h4>Store</h4>
@@ -177,7 +184,7 @@
         </div>
       </div>
 
-      <div class="portfolio-box">
+      <div class="portfolio__container-box">
         <img src="Assets/img/cafe.webp" alt="blog-cafe">
         <div class="portfolio-layer">
           <h4>Blog Cafe</h4>
@@ -186,7 +193,7 @@
         </div>
       </div>
       
-      <div class="portfolio-box">
+      <div class="portfolio__container-box">
         <img src="Assets/img/calculadora.webp" alt="calculadora">
         <div class="portfolio-layer">
           <h4>Calculadora</h4>
@@ -201,12 +208,7 @@
 
   <!-- footer design -->
   <footer class="footer">
-    <div class="footer-text">
       <p>Marco Rodriguez</p>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
   </footer>
 
   <!-- cript-scroll-reveal -->
