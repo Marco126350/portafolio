@@ -37,9 +37,10 @@ body{
 
 /* **********COMPONENTES********** */
 /* menu hamburguesa */
-.header{
+/* .header{
   max-width: 100vw;
-}
+  padding-right: 1rem;
+} */
 .header__logo{
   font-size: 2.5rem;
   color: var(--text-color);
@@ -100,15 +101,17 @@ body{
     background-color: transparent;
     height: 100%;
    }
-   .header__navbar a{
-    font-size: 1.7rem;
-    padding: 1rem;
-   }
    .header__navbar a:hover, .header__navbar a.active{
     background-color: unset;
    }
    .header__navbar a:hover{
     background-color: none;
+   }
+}
+@media (min-width: 1024px) {
+   .header__navbar a{
+    font-size: 1.7rem;
+    padding: 1rem;
    }
 }
 /*end-menu hamburguesa */
